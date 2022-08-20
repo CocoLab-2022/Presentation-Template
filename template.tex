@@ -1,0 +1,66 @@
+\documentclass[14pt,aspectratio=169]{beamer}
+\usepackage{pgfpages}
+\usepackage{fancyvrb}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{booktabs}
+
+
+
+
+\usetheme{auriga}
+\usecolortheme{auriga}
+
+% define some colors for a consistent theme across slides
+\definecolor{red}{RGB}{181, 23, 0}
+\definecolor{blue}{RGB}{0, 118, 186}
+\definecolor{gray}{RGB}{146, 146, 146}
+\title{Presentation Template}
+
+\author{A Salt Fish}
+
+\institute[shortinst]{Beijing University of Posts and Telecommunications}
+
+
+\begin{document}
+{
+
+% rather than use the frame options [noframenumbering,plain], we make the
+% color match, so that the indicated page numbers match PDF page numbers
+\setbeamercolor{page number in head/foot}{fg=background canvas.bg}
+\begin{frame}
+  \titlepage
+  \begin{figure}[b]
+    \begin{flushright}
+      \includegraphics[width=0.1\linewidth]{pic/logo.png}
+    \end{flushright}      
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Figure}
+  
+  \begin{figure}
+    \includegraphics[scale=0.15]{pic/logo.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Table \& Equation}
+  \textbf{Table}
+  \begin{center}
+    \begin{tabular}{c c c}
+      \toprule
+      A &B &C\\
+      \midrule
+      1 &2 &3\\
+      \bottomrule
+    \end{tabular}
+  \end{center}
+  \textbf{Equation}
+  \begin{equation}
+    C_i=A_i+B_i
+  \end{equation}
+\end{frame}
+
+\end{document}
